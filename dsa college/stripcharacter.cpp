@@ -19,15 +19,21 @@ int main() {
 /*
 // dono code same work krenge ok uper wala hr jgha kaam krega
 #include <iostream>
+#include<cstring>
 using namespace std;
 
 int main()
 {
-    char ch[20];
+    char ch[200];
     cin>>ch;
-    for(int i=3;i<=7;i++)
+    cout<<"Enter how much to remove: ";
+    int n;
+    cin>>n;
+    int len=strlen(ch);
+    for(int i=n;i<len-n;i++)
     {
         cout<<ch[i];
     }
     return 0;
+}
 }*/
