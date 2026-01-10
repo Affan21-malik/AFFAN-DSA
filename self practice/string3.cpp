@@ -14,7 +14,7 @@ string removeOccurrences(string s, string part)
 
 int main()
 {
-    string s = "abcabcabcabc";
+    string s = "abcabcabcabca1";
     string part = "abc";
 
     cout << removeOccurrences(s, part);
