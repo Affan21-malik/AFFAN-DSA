@@ -1,4 +1,4 @@
- /*#include <iostream>
+ #include <iostream>
 using namespace std;
 
 float simpleInterest(float P, float R, float T) {
@@ -21,7 +21,7 @@ int main() {
     cout << "Simple Interest = " << SI << endl;
 
     return 0;
-}*/
+}
 
 
 
