@@ -54,39 +54,40 @@ int main()
 // binary number search
 
 #include <iostream>
-#include<vector>
+#include <vector>
 using namespace std;
-int binsearch(vector<int>&arr,int tar,int st,int end){
-  if(st<=end){
-   int mid=(st+end)/2 ;
-  
- if(arr[mid]==tar){
-     return mid;
- }
- else if(arr[mid]<tar){
-   return  binsearch(arr,tar,mid+1,end);
- }
- else{
-  return   binsearch(arr,tar,st,mid-1);
- }
 
-}
-return -1;
-}
-int search(vector<int>&arr,int tar){
-    
-    return   binsearch(arr,tar,0,arr.size()-1);
+int binsearch(vector<int>& arr, int tar, int st, int end) {
+
+    if (st <= end) {
+
+        int mid = (st + end) / 2;
+
+        if (arr[mid] == tar) {
+            return mid;
+        }
+        else if (arr[mid] < tar) {
+            return binsearch(arr, tar, mid + 1, end);
+        }
+        else {
+            return binsearch(arr, tar, st, mid - 1);
+        }
+    }
+
+    return -1;
 }
 
 int main() {
-    vector<int> arr = {1,2,3,4,5,6,7};
-    int target = 5;
 
-    int ans = search(arr, target);
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
+    int tar = 5;
+
+    int st = 0;
+    int end = arr.size() - 1;
+
+    int ans = binsearch(arr, tar, st, end);
 
     cout << "Index: " << ans;
 
-    return 0;}
-    
-    
-    
+    return 0;
+}
