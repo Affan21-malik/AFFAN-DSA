@@ -1,3 +1,31 @@
+// arrar shorted 
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = 5;
+
+    bool sorted = true;
+
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            sorted = false;
+            break;
+        }
+    }
+
+    if (sorted)
+        cout << "Array is Sorted";
+    else
+        cout << "Array is Not Sorted";
+
+    return 0;
+}
+
+/*
+//hand written code 
 #include <iostream>
 using namespace std;
 void unique(int arr[],int n,int max){
@@ -22,7 +50,7 @@ for(int i=0;i<n;i++){
 unique(arr,n,max);
     return 0;
 }
-
+*/
 
 
 /*
@@ -80,30 +108,4 @@ int main() {
 
 
 */
-// arrar shorted 
-/*#include <iostream>
-using namespace std;
 
-int main() {
-
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = 5;
-
-    bool sorted = true;
-
-    for (int i = 0; i < n - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-            sorted = false;
-            break;
-        }
-    }
-
-    if (sorted)
-        cout << "Array is Sorted";
-    else
-        cout << "Array is Not Sorted";
-
-    return 0;
-}
-
-*/
