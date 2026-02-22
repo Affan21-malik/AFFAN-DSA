@@ -188,3 +188,56 @@ int main() {
     return 0;
 }
 */
+/*
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+int arr[5]={5,6,3,7,1};
+int size =5;
+
+int smallest = INT_MAX;
+int index =0;
+for(int i = 0;i<size;i++){
+  if(arr[i]<smallest){
+      smallest =arr[i];
+      index= i ;
+  }
+}
+cout<<"index is "<<index;
+    return 0;
+}
+*/
+/*
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int arr[5] = {5, 6, 3, 7, 1};
+    int size = 5;
+
+    int smallest = INT_MAX;
+    int largest = INT_MIN;
+    int index1=0;
+    int index2=0;
+
+    for(int i = 1; i < size; i++){
+        if(arr[i] < smallest){
+            smallest = arr[i];
+            index1=i;
+        }
+
+        if(arr[i] > largest){
+            largest = arr[i];
+            index2=i;
+        }
+    }
+
+    cout << "Smallest is " << smallest << endl;
+    cout << "Largest is " << largest << endl;
+cout<<"index1 is "<<index1<<endl;
+cout<<"index2 is "<<index2<<endl;
+    return 0;
+}
+*/
