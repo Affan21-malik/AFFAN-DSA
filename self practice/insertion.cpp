@@ -1,3 +1,4 @@
+//temp =prev,j=curr
 #include <bits/stdc++.h>
 using namespace std;
 
