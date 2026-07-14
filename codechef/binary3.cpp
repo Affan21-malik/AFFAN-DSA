@@ -1,5 +1,5 @@
 
-// ex 5 using function 
+//ex 5 using function 
 #include <iostream>
 #include <vector>
 using namespace std;
