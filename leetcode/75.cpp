@@ -86,7 +86,6 @@
 #include <vector>
 #include <algorithm>   // swap() ke liye
 using namespace std;
-
 int main() {
 
     int n;
