@@ -15,6 +15,7 @@ public:
 
             if (leftSum == rightSum) {
                 return x;
+                
             }
         }
 
