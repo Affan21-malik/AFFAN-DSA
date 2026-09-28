@@ -9,6 +9,7 @@ public:
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
+            
 
             if ((long long)mid * mid <= x) {
                 ans = mid;
